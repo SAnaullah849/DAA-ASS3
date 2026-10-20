@@ -3,6 +3,7 @@
 ## 1. Overview
 This program represents a city as a graph. Vertices are districts, edges are roads, and weights are road costs or distances.
 ## Graphs
+![IMG_20261021_022201.jpg](results/plots/IMG_20261021_022201.jpg)
 ![IMG_20261021_022201.jpg](results\plots\IMG_20261021_022201.jpg)
 ![IMG_20261021_022134.jpg](results\plots\IMG_20261021_022134.jpg)
 ![IMG_20261021_022115.jpg](results\plots\IMG_20261021_022115.jpg)

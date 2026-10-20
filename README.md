@@ -3,9 +3,9 @@
 ## 1. Overview
 This program represents a city as a graph. Vertices are districts, edges are roads, and weights are road costs or distances.
 ## Graphs
-![](\results\plots\IMG_20261021_022201.jpg)
-![](\results\plots\IMG_20261021_022134.jpg)
-![](\results\plots\IMG_20261021_022115.jpg)
+![](results\plots\IMG_20261021_022201.jpg)
+![](results\plots\IMG_20261021_022134.jpg)
+![](results\plots\IMG_20261021_022115.jpg)
 ## 2. Files
 - `graph/Edge.java`: stores a road and its weight.
 - `graph/Graph.java`: stores vertices and connections.
@@ -110,7 +110,7 @@ All tests are in `Tests.java`. The output is saved in `results/tables/test_outpu
 **How time changes with vertices and edges.** Every algorithm gets slower as the graph grows. From Medium to Large, both vertices and edges grow by 10 times, and the times grew by about 6 times for Kruskal, 9.4 times for Prim, 9.4 times for Dijkstra, 7 times for Kosaraju and 3.9 times for topological sorting. That is close to linear growth, which fits the O(V + E) algorithms and the O(E log E) and O((V + E) log V) algorithms, because the log factor only adds a small amount between these sizes. Growth is smaller than 10 times for some algorithms. One reason is that the Small and Medium timings are only a few microseconds to a few tens of microseconds, so fixed costs such as object creation take a larger share there. For Kruskal, early stopping also reduces the work, since it examined only 64% of the edges on the Large graph.
 
 **Kruskal compared with Prim.** Both build an MST of the same weight, and their operation counts are almost identical (3,210 and 3,199 on the Large graph). Their times are in the same range, but the faster one depends on how dense the graph is. In the 1,000-vertex sweep they were about equal at 1,000 edges, Kruskal was faster at 2,000 and 5,000 edges, they were about equal at 10,000 edges, and Prim was faster at 20,000 and 40,000 edges (2,075 vs 2,414 and 2,801 vs 4,829 microseconds). On the three required sizes, Prim was faster on Small and Medium and Kruskal was faster on Large (577 vs 763 microseconds). So on sparse graphs Kruskal is competitive, and on denser graphs Prim is better, because Kruskal pays for sorting all E edges while Prim only works with the edges next to the tree.
-![](\results\plots\IMG_20261021_011811.jpg)
+![](results\plots\IMG_20261021_011811.jpg)
 
 **Do the results match the complexity analysis?** Mostly yes. Kruskal, with its O(E log E) sort, is the algorithm that reacts most to extra edges. Dijkstra, topological sorting and Kosaraju grow slowly and steadily as expected for O(V + E) and O((V + E) log V) algorithms. The Kruskal against Prim comparison also matches the theory that sorting every edge costs more as the graph gets denser.
 

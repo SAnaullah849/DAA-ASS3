@@ -1,0 +1,20 @@
+PASS  Small graph: Kruskal weight is 10
+PASS  Small graph: Prim weight is 10
+PASS  Small graph: Dijkstra distances are 0,3,2,8,10
+PASS  Small graph: path to 3 is 0,2,1,3
+PASS  Disconnected graph: Kruskal reports not connected
+PASS  Disconnected graph: Prim reports not connected
+PASS  Unreachable vertices: distance is Long.MAX_VALUE
+PASS  Unreachable vertices: path is empty
+PASS  Several possible MSTs: both algorithms give weight 3
+PASS  Duplicate weights: both algorithms give weight 9
+PASS  Single vertex: MST weight 0 and connected
+PASS  Single vertex: Dijkstra distance is 0
+PASS  50 random connected graphs: Kruskal and Prim weights match
+PASS  DAG: topological order is valid
+PASS  Directed cycle: topological sort detects the cycle
+PASS  SCC: found 3 components
+PASS  SCC: every vertex is in exactly one component
+PASS  Dijkstra: shortest distance to 3 is 2
+
+Passed: 18  Failed: 0

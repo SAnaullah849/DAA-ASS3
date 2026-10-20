@@ -1,0 +1,4 @@
+size,vertices,edges,kruskal_ops,prim_ops,dijkstra_ops,kruskal_weight,prim_weight,scc_count,kruskal_us,prim_us,dijkstra_us,topo_us,kosaraju_us
+Small,10,30,12,12,60,188,188,1,10.3818,7.0758,3.8344,2.3716,6.5068
+Medium,100,500,200,201,1000,1182,1182,2,96.11460000000001,81.008,37.2278,18.1358,33.8004
+Large,1000,5000,3210,3199,10000,12695,12695,16,577.3954,763.217,350.0308,71.04360000000001,238.167
